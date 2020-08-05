@@ -1,12 +1,17 @@
 {%- if template.name == 'page' or template.name == 'blog' or template == 'customers/account' or template == 'customers/order' or template == 'customers/addresses' -%}
   {%- assign add_top_margin = true -%}
-{%- else -%}
+ {%- else -%}
   {%- assign add_top_margin = false -%}
 {%- endif -%}
 
-{%- if template == 'page.collections' -%}
+ {%- if template == 'page.collections' -%}
   {%- assign add_top_margin = false -%}
-{%- endif -%}
+ {% endif %}
+
+  {% if template.suffix == 'faq' or template.suffix == 'morphologie' %}
+       {%- assign add_top_margin = false -%}
+  {% endif %}
+
 
 <footer id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="footer" class="Footer {% if section.blocks.size <= 2 %}Footer--center{% endif %} {% if add_top_margin %}Footer--withMargin{% endif %}" role="contentinfo">
   <div class="Container">

@@ -1,0 +1,145 @@
+<section id="section-{{ section.id }}">
+  <div class="background-right">
+    <div class="background-left"></div>
+     <div class="container-morphologie">
+       <header class="Page__Header">
+         <div class="SectionHeader SectionHeader--center">
+            <div class="SectionHeader__Heading Page__Heading Heading u-h1">
+             {{ section.settings.heading }}
+            </div>
+         </div>
+      </header>
+      {% for block in section.blocks %}
+        <div id="block--{{ block.id }}">
+          <div class="Morphology__block">
+            <div class="grid {% if block.settings.reverse == "right" %} grid--rev {% endif %}">
+              <div class="9/12--lap-and-up grid__cell">
+                 <div class="Morphology__content {% if block.settings.reverse == "left" %} extra-padding-right {% else %} extra-padding-left {% endif %}">
+                   <h3 class="Morphology__title u-h2">{{ block.settings.title }}</h3>
+                   <div class="Morphology__text">
+                     {{ block.settings.content }}
+                   </div>
+                 </div>
+              </div>
+              <div class="3/12--lap-and-up grid__cell">
+                <div class="relative">
+                  <div class="Morphology__image {% if block.settings.reverse == "left" %} position-right {% else %} position-left {% endif %}">
+                    {% if block.settings.image != blank %}
+                      <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
+                    {% endif %}
+                  </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       {% endfor %}
+     </div>
+  </div>
+</section>
+<style>
+    .background-right{
+       background-color: {{ section.settings.background-right }};
+     }
+
+     .background-left{
+        background-color: {{ section.settings.background-left }};
+      }
+     {% for block in section.blocks %}
+        #block--{{ block.id }} .Morphology__content{
+           background-color: {{ block.settings.background-color }};
+         }
+        #block--{{ block.id }} .Morphology__title{
+            color: {{ block.settings.title-color }};
+          }
+        #block--{{ block.id }} .Morphology__text{
+              color: {{ block.settings.text-color }};
+            }
+     {% endfor %}
+
+</style>
+{% schema %}
+{
+  "name": "Morphologie",
+  "settings": [
+       {
+         "type": "textarea",
+         "id": "heading",
+         "label": "Section heading",
+         "default": "<p>Conseils pour bien choisir son modèle selon sa morphologie</p>"
+       },
+       {
+         "type": "color",
+         "id": "background-right",
+         "label": "Background right",
+         "default": "#FFF9EF"
+       },
+       {
+         "type": "color",
+         "id": "background-left",
+         "label": "Background left",
+         "default": "#fff"
+       }
+  ],
+  "blocks": [
+    {
+      "type": "type",
+      "name": "Morphology type",
+      "settings": [
+
+          {
+             "type":      "select",
+             "id":        "reverse",
+             "label":     "Text",
+             "options": [
+               {
+                 "value": "right",
+                 "label": "Right"
+               },
+               {
+                 "value": "left",
+                 "label": "Left"
+               }
+             ],
+             "default":   "left"
+          },
+          {
+            "type": "color",
+            "id": "background-color",
+            "label": "Background color",
+            "default": "#e2a291"
+          },
+          {
+            "type": "color",
+            "id": "title-color",
+            "label": "Title color",
+            "default": "#fff"
+          },
+          {
+            "type": "color",
+            "id": "text-color",
+            "label": "Text color",
+            "default": "#fff"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Morphologie type"
+          },
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Content",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image"
+          }
+      ]
+    }
+  ]
+}
+{% endschema %}

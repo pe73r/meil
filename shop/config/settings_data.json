@@ -22,8 +22,8 @@
     "secondary_elements_background": "#f4e7cd",
     "secondary_elements_text_color": "#89979f",
     "heading_font": "montserrat_n4",
-    "heading_size": "small",
-    "uppercase_heading": true,
+    "heading_size": "large",
+    "uppercase_heading": false,
     "text_font": "open_sans_n4",
     "base_text_font_size": 14,
     "show_page_transition": true,
@@ -556,6 +556,314 @@
           "apply_overlay": false,
           "text_color": "#ffffff",
           "button_color": "#363636"
+        }
+      },
+      "morphologie": {
+        "type": "morphologie",
+        "blocks": {
+          "1596468849881": {
+            "type": "type",
+            "settings": {
+              "reverse": "left",
+              "background-color": "#e2a291",
+              "title-color": "#ffffff",
+              "text-color": "#ffffff",
+              "title": "Morphologie en A",
+              "content": "<p>C’est l’une des silhouettes les plus répandues chez les femmes. Cette\nmorphologie implique que vous avez des hanches plus larges que vos épaules et\ndonc votre poitrine.<br><br>\nPour cette silhouette, nous vous conseillons « d’habiller » le haut du corps pour\ncréer un effet volume. Le soutien-gorge push-up est à privilégier car il va gonfler\nvotre poitrine. N’hésitez pas à choisir de la dentelle pour renforcer l’habillage.<br><br>\nPour le bas du corps, choisissez plutôt des culottes échancrées ou bien des tangas : ils feront\nparfaitement ressortir les courbes féminines de votre silhouette.<\/p>",
+              "image": "shopify:\/\/shop_images\/Layer_1.png"
+            }
+          },
+          "1596470801591": {
+            "type": "type",
+            "settings": {
+              "reverse": "right",
+              "background-color": "#e58155",
+              "title-color": "#fff",
+              "text-color": "#fff",
+              "title": "Morphologie en V",
+              "content": "<p>Cette silhouette implique que vos hanches sont plus fines que vos épaules.\nNous vous conseillons d’accentuer les hanches en optant pour un shorty et\nles tailles hautes afin de recréer une ligne horizontale. Optez pour la culotte\nmenstruelle Meïla.<br><br>\nPour le haut du corps, privilégiez un soutien-gorge corbeille pour un beau\ndécolleté ou bien le modèle foulard, un véritable atout séduction.<\/p>",
+              "image": "shopify:\/\/shop_images\/Layer_3.png"
+            }
+          },
+          "1596472250371": {
+            "type": "type",
+            "settings": {
+              "reverse": "left",
+              "background-color": "#ad8d6a",
+              "title-color": "#fff",
+              "text-color": "#fff",
+              "title": "Morphologie en H",
+              "content": "<p>Cette silhouette décrit un tour de poitrine à peu près égal au tour de hanche\navec une taille peu marquée.<br>\nPour le haut du corps, vous avez le choix entre le triangle ou le corbeille. Vous\npouvez miser sur les bodys, les bustiers pour souligner la taille, cela ajoutera\nun effet glamour. En revanche, éviter les bandeaux.<br><br>\nPour le bas du corps, privilégiez les tailles hautes.<\/p>",
+              "image": "shopify:\/\/shop_images\/Layer_1.png"
+            }
+          },
+          "1596499541138": {
+            "type": "type",
+            "settings": {
+              "reverse": "right",
+              "background-color": "#88969f",
+              "title-color": "#fff",
+              "text-color": "#fff",
+              "title": "Morphologie en 8",
+              "content": "<p>Cette silhouette concerne les femmes ayant des formes (une taille 40 ou plus) et dont le tour de\nhanche est égal au tour de poitrine. L’important est de mettre en avant les courbes féminines et\ngénéreuses.<br><br>\nPour le haut du corps privilégiez le soutien-gorge corbeille, n’hésitez pas à oser le bustier et les\ncorsets !<\/p>",
+              "image": "shopify:\/\/shop_images\/Layer_3.png"
+            }
+          },
+          "1596499676712": {
+            "type": "type",
+            "settings": {
+              "reverse": "left",
+              "background-color": "#495975",
+              "title-color": "#fff",
+              "text-color": "#fff",
+              "title": "Morphologie en X",
+              "content": "<p>Cette silhouette se rapproche de la morphologie en 8 mais elle concerne les\npetites tailles (34 ? 36 et 38). Le tour de poitrine est équivalent au tour de\nhanches et votre taille est très marquée.<br><br>\nMesdames, si vous avez cette morphologie alors toutes les formes vous\nconviennent !<\/p>",
+              "image": "shopify:\/\/shop_images\/Layer_1.png"
+            }
+          },
+          "1596499766544": {
+            "type": "type",
+            "settings": {
+              "reverse": "right",
+              "background-color": "#e2a291",
+              "title-color": "#fff",
+              "text-color": "#fff",
+              "title": "Morphologie en O",
+              "content": "<p>Cette silhouette concerne les femmes à la taille généreuse (46 ou plus). Votre\npoitrine, vos hanches et votre ventre sont tout en forme. N’hésitez pas à\nmettre en avant vos atouts féminins.<br><br>\nPour le haut du corps, privilégiez le soutien-gorge emboîtant assurant à la fois\nun bon maintien, un beau décolleté et des seins ronds.<br><br>\nPour le bas, misez sur des culottes et shorty tailles hautes. Vous pouvez\négalement optez pour des bas gainant afin de galber vos hanches.<\/p>",
+              "image": "shopify:\/\/shop_images\/Layer_3.png"
+            }
+          }
+        },
+        "block_order": [
+          "1596468849881",
+          "1596470801591",
+          "1596472250371",
+          "1596499541138",
+          "1596499676712",
+          "1596499766544"
+        ],
+        "settings": {
+          "heading": "<p>Conseils pour bien choisir <br>son modèle selon sa morphologie<\/p>",
+          "title-size": 40,
+          "background-right": "#fff9ef",
+          "background-left": "#fff"
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-0": {
+            "type": "separator",
+            "settings": {
+              "title": "Livraison et suivi de commande",
+              "picto": "shopify:\/\/shop_images\/Layer_21.png"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Livrez-vous à l’international ?",
+              "answer": "<p>Nous livrons dans la plupart des pays d&rsquo;Europe et Dom-Tom (voir la liste compl&egrave;te ci-dessous), des frais de livraison suppl&eacute;mentaires sont &agrave; pr&eacute;voir selon la destination.<\/p>\n<p>Zone 1 :<\/p>\n<p>Guadeloupe \/ Martinique \/ Mayotte \/ R&eacute;union \/ Guyane \/ Saint Pierre et Miquelon \/ Saint Martin \/ Saint Barth&eacute;l&eacute;my<\/p>\n<p>Zone 2 :<\/p>\n<p>Polyn&eacute;sie Fran&ccedil;aise \/ Nouvelle Cal&eacute;donie<\/p>\n<p><\/p>\n<p>Zone 3 :<\/p>\n<p>Allemagne \/ Belgique \/Luxembourg \/ Pays-Bas Andorre Espagne \/ Italie \/ San Marin \/ Vatican \/ Autriche \/ Danemark Finlande \/ Irlande \/ Portugal Royaume-Uni Su&egrave;de<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les délais de traitement de ma commande ?",
+              "answer": "<p>Les Commandes sont pr&eacute;par&eacute;es et exp&eacute;di&eacute;es dans les 72H suivant votre commande (hors p&eacute;riode de f&ecirc;tes de fin d'ann&eacute;e et hors week-end et jours f&eacute;ri&eacute;s)<\/p>\n<p>Dans les p&eacute;riodes de forte activit&eacute;, la pr&eacute;paration de la commande peut prendre un peu plus de temps (4\/5 jours).<\/p>\n<p>Vous serez pr&eacute;venu par e-mail d&egrave;s l&rsquo;exp&eacute;dition de votre colis et vous recevrez le num&eacute;ro de suivi de votre commande pour &ecirc;tre tenu inform&eacute; du bon acheminement de votre colis<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les délais de livraison de ma commande ?",
+              "answer": "<p>Les colis exp&eacute;di&eacute;s via Colissimo en France m&eacute;tropolitaine sont livr&eacute;s sous 2 jours ouvrables.<\/p>\n<p>Les colis exp&eacute;di&eacute;s via Colissimo dans les Dom-Tom sont livr&eacute;s sous 7 jours ouvr&eacute;s.<\/p>\n<p>Les colis exp&eacute;di&eacute;s via TNT dans les pays d&rsquo;Europe sont livr&eacute;s sous 2 jours ouvrables.<\/p>"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Retour et remboursement",
+              "picto": "shopify:\/\/shop_images\/undo.png"
+            }
+          },
+          "page-faq-template-5": {
+            "type": "question",
+            "settings": {
+              "title": "Effectuer un retour en France Métropolitaine",
+              "answer": "<p>Vous disposez d&rsquo;un d&eacute;lai de 15 jours apr&egrave;s r&eacute;ception de votre commande pour nous retourner vos pi&egrave;ces contre remboursement, &eacute;change ou avoir, si elles ne vous ne conviennent pas.<\/p>\n<p>A noter qu&rsquo;un retour par commande seulement est pris en charge : si dans le cadre d'un &eacute;change, le nouveau produit ne convenait toujours pas, les frais des retours suivants sont &agrave; votre charge.&nbsp;Les pi&egrave;ces dont l&rsquo;&eacute;tiquette a &eacute;t&eacute; d&eacute;tach&eacute;e ne pourront faire l&rsquo;objet d&rsquo;un retour.<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "Effectuer un retour depuis un autre pays ou Dom\/Tom",
+              "answer": "<p>Les retours depuis l'&eacute;tranger, ainsi que les DOM TOM sont &agrave; votre charge. Attention cependant, il faut que les produits soient retourn&eacute;s dans un d&eacute;lai de 30 jours. Les pi&egrave;ces dont l&rsquo;&eacute;tiquette a &eacute;t&eacute; d&eacute;tach&eacute;e ne pourront faire l&rsquo;objet d&rsquo;un retour.<\/p>"
+            }
+          },
+          "page-faq-template-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Paiement",
+              "picto": "shopify:\/\/shop_images\/credit-card.png"
+            }
+          },
+          "page-faq-template-8": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les moyens de paiement ?",
+              "answer": "<p>Nous acceptons les paiements par carte bancaire et par Paypal. Tous les paiements sont bien s&ucirc;rs s&eacute;curis&eacute;s.&nbsp;<\/p>"
+            }
+          },
+          "1596620300804": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les coûts de livraison ?",
+              "answer": "<p>Livraison en point relais via Mondial Relay (France M&eacute;tropolitaine hors Corse) : 4,50&euro; TTC, offert &agrave; partir de 100&euro; d'achat.<\/p>\n<p>Livraison &agrave; domicile via Colissimo, sans signature (France M&eacute;tropolitaine) :&nbsp;6&euro; TTC, offert &agrave; partir de 100&euro; d&rsquo;achat.<\/p>\n<p>&nbsp;Ils varient en fonction des autres destinations d'envoi&nbsp;:<\/p>\n<p>Zone 1&nbsp;: les frais de livraison sont de 9,60 euros TTC via Colissimo<\/p>\n<p>Zone 2&nbsp;: les frais de livraison sont de 12 euros TTC via Colissimo&nbsp;<\/p>\n<p>Zone 3&nbsp;: les frais de livraisons sont de 15 euros TTC via TNT<\/p>"
+            }
+          },
+          "1596620369215": {
+            "type": "question",
+            "settings": {
+              "title": "Que faire si j’ai un souci de livraison ?",
+              "answer": "<p>Nous vous invitons &agrave; contacter notre Service Client par mail &agrave; l&rsquo;adresse <a href=\"mailto:bonjour@meila-paris.com\">bonjour@meila-paris.com<\/a>. A tout probl&egrave;me, une solution !<\/p>"
+            }
+          },
+          "1596620386245": {
+            "type": "question",
+            "settings": {
+              "title": "Comment puis-je suivre mon colis ?",
+              "answer": "<p>Une fois votre colis d&eacute;poser aupr&egrave;s de notre prestataire, il vous suffit de cliquer sur le lien ci-dessous correspondant &agrave; votre mode de livraison choisi et de rentrer le num&eacute;ro de suivi (indiqu&eacute; sur votre mail d&rsquo;exp&eacute;dition) de commande pour savoir o&ugrave; en est l&rsquo;acheminement.<br> <br> Colissimo (rubrique suivre mon Colis) :&nbsp;<a href=\"http:\/\/www.colissimo.fr\/particuliers\/home.jsp\">http:\/\/www.colissimo.fr\/particuliers\/home.jsp<\/a><br> Mondial Relay :&nbsp;<a href=\"http:\/\/www.mondialrelay.fr\/suivi-de-colis\/\">http:\/\/www.mondialrelay.fr\/suivi-de-colis\/<\/a><\/p>\n<p>DHL :&nbsp;http:\/\/www.dhl.fr\/fr\/dhl_express\/suivi_expedition.html<\/p>"
+            }
+          },
+          "1596620420968": {
+            "type": "question",
+            "settings": {
+              "title": "Je me suis trompée d’adresse, de modèle, de taille lors de ma commande, que faire ?",
+              "answer": "<p>Nous vous invitons &agrave; contacter notre Service Client par mail &agrave; l&rsquo;adresse <a href=\"mailto:bonjour@meila-paris.com\">bonjour@meila-paris.com<\/a>. Nous ferons notre maximum pour prendre en compte votre modification dans la mesure du possible (si votre commande n&rsquo;a pas encore &eacute;t&eacute; pr&eacute;par&eacute;e ou exp&eacute;di&eacute;e).<br> Mais rassurez-vous si votre commande a d&eacute;j&agrave; &eacute;t&eacute; exp&eacute;di&eacute;e vous pourrez d&egrave;s sa r&eacute;ception effectuer un&nbsp;retour gratuitement&nbsp;en suivant la proc&eacute;dure&nbsp;via votre compte client et l'historique de vos commandes.<\/p>"
+            }
+          },
+          "1596620455108": {
+            "type": "question",
+            "settings": {
+              "title": "Mon colis a été retourné à l’expéditeur, que faire ?",
+              "answer": "<p>Malheureusement, une fois votre colis retourn&eacute; &agrave; notre Atelier, celui-ci ne pourra vous &ecirc;tre r&eacute;exp&eacute;di&eacute; et sera automatiquement rembours&eacute; dans un d&eacute;lai de 7 jours ouvr&eacute;s.<\/p>"
+            }
+          },
+          "1596620670268": {
+            "type": "question",
+            "settings": {
+              "title": "Ma pièce présente un défaut",
+              "answer": "<p>Nous nous excusons si le produit pr&eacute;sente un d&eacute;faut malgr&eacute; tous nos contr&ocirc;les qualit&eacute;. Nous vous invitons &agrave; contacter le service client &agrave; l&rsquo;adresse <a href=\"mailto:bonjour@meila-paris.com\">bonjour@meila-paris.com<\/a>. N&rsquo;oubliez pas de joindre &agrave; votre message des photos de votre pi&egrave;ce d&eacute;fectueuse, cela nous aidera &agrave; vous proposer la meilleure solution.<\/p>"
+            }
+          },
+          "1596620701418": {
+            "type": "question",
+            "settings": {
+              "title": "Délai de remboursement",
+              "answer": "<p>Vous recevrez un email pour vous pr&eacute;venir lorsque nous recevrons votre colis de retour ainsi que lorsque le remboursement aura &eacute;t&eacute; effectu&eacute;. Comptez environ 7 &agrave; 10 jours ouvr&eacute;s pour laisser le temps &agrave; notre Atelier de traiter votre colis retour.<br> Notez que le remboursement d'une commande r&eacute;gl&eacute;e avec une carte cadeau ou un avoir, sera effectu&eacute; automatiquement en avoir.<\/p>"
+            }
+          },
+          "1596620863433": {
+            "type": "question",
+            "settings": {
+              "title": "Le paiement est-il sécurisé ?",
+              "answer": "<p>Vos informations bancaires ne sont jamais en notre possession. Les transactions sont enti&egrave;rement trait&eacute;es par le module de paiement s&eacute;curis&eacute; de notre partenaire Shopify. Le paiement est totalement s&eacute;curis&eacute;.<\/p>"
+            }
+          },
+          "1596620875322": {
+            "type": "question",
+            "settings": {
+              "title": "Comment payer ma commande avec une carte cadeau ou un avoir ?",
+              "answer": "<p>Lorsque vous validerez votre panier vous aurez la possibilit&eacute; de rentrer le code de votre carte cadeau ou avoir dans l&rsquo;encart pr&eacute;vu &agrave; cet effet.<\/p>"
+            }
+          },
+          "1596620886111": {
+            "type": "question",
+            "settings": {
+              "title": "Mon paiement a été refusé",
+              "answer": "<p>Si votre paiement n&rsquo;a pu aboutir, n&rsquo;h&eacute;sitez pas &agrave; repasser votre commande avec un autre moyen de paiement.<br> <br> Si malgr&eacute; cela, vous ne parvenez pas &agrave; r&eacute;gler votre commande, n&rsquo;h&eacute;sitez pas &agrave; contacter notre Service Client &agrave; l&rsquo;adresse <a href=\"mailto:bonjour@meila-paris.com\">bonjour@meila-paris.com<\/a>.<\/p>"
+            }
+          },
+          "1596620906925": {
+            "type": "question",
+            "settings": {
+              "title": "Comment accéder à ma facture ?",
+              "answer": "<p>Une facture vous a &eacute;t&eacute; transmise par mail &agrave; la suite de votre achat avec le r&eacute;capitulatif de la commande. Si vous ne retrouvez plus la facture n&rsquo;h&eacute;sitez pas &agrave; nous &eacute;crire &agrave; l&rsquo;adresse <a href=\"mailto:bonjour@meila-paris.com\">bonjour@meila-paris.com<\/a>, nous vous transmettrons un autre exemplaire.<\/p>"
+            }
+          },
+          "1596620949383": {
+            "type": "separator",
+            "settings": {
+              "title": "Produits et tailles",
+              "picto": "shopify:\/\/shop_images\/bikini.png"
+            }
+          },
+          "1596621070730": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont nos lieux de fabrication ?",
+              "answer": "<p>Vous pouvez consulter la rubrique <strong>Nos fournisseurs <\/strong>dans le menu d&eacute;roulant de la page d&rsquo;accueil. Nous pr&eacute;sentons l&rsquo;ensemble de nos fournisseurs de mati&egrave;res premi&egrave;res ainsi que les usines de fabrication.<\/p>"
+            }
+          },
+          "1596621079839": {
+            "type": "question",
+            "settings": {
+              "title": "Comment sont fixés nos prix ?",
+              "answer": "<p>Nos prix sont fix&eacute;s pour vous offrir la meilleure qualit&eacute; possible dans nos produits. Nos mati&egrave;res sont responsables et cela implique un surco&ucirc;t par rapport aux autres mati&egrave;res, environ 30%. Nous veillons &agrave; ce que nos fournisseurs soient europ&eacute;ens, cela impact &eacute;galement notre prix puisque les salaires et les normes sont plus importants que dans d&rsquo;autres pays. Enfin notre fabrication est fran&ccedil;aise, c&rsquo;est cela qui revient le plus cher dans la conception de nos produits, environ deux fois plus cher qu&rsquo;un autre pays d&rsquo;Europe et quatre fois plus cher qu&rsquo;un pays hors Europe.<\/p>"
+            }
+          },
+          "1596621093499": {
+            "type": "question",
+            "settings": {
+              "title": "Comment choisir la taille la mieux adaptée à ma morphologie ?",
+              "answer": "<p>Vous pouvez consulter la rubrique <strong>Conseil <\/strong>dans le menu d&eacute;roulant de la page d&rsquo;accueil. Nous vous donnerons toutes les informations n&eacute;cessaires pour vous aidez au mieux dans le choix de votre lingerie.<\/p>"
+            }
+          },
+          "1596621107867": {
+            "type": "question",
+            "settings": {
+              "title": "Que veut dire « flux léger » pour la culotte menstruelle ?",
+              "answer": "<p>La culotte menstruelle que nous proposons est uniquement con&ccedil;ue pour des flux l&eacute;gers. Elle est compos&eacute;e d&rsquo;une couche de bouclette en coton bio pour la partie absorbante, d&rsquo;une couche de membrane imperm&eacute;able et respirante pour &eacute;viter les fuites&nbsp;😉 et d&rsquo;un fond de culotte en coton. La mati&egrave;re en contact avec votre peau est comme les autres bas des lignes Me&iuml;la, c&rsquo;est-&agrave;-dire le coton. Pour les flux plus abondants, il serait n&eacute;cessaire d&rsquo;ajouter plusieures couches de bouclettes, ce qui n&rsquo;est pas le cas de notre mod&egrave;le. C&rsquo;est pour cela que la culotte menstruelle Me&iuml;la convient aux femmes qui ont des flux l&eacute;gers et ne portent g&eacute;n&eacute;ralement que des prot&egrave;ge-slips en p&eacute;riode de r&egrave;gles, ou pour les derniers jours de r&egrave;gles, moins abondants.<\/p>\n<p>Conseil lavage&nbsp;: rincer la culotte apr&egrave;s utilisation et laver &agrave; 30&deg;. N&rsquo;utilisez pas de s&egrave;che-linge mais un s&eacute;chage naturel.<\/p>"
+            }
+          },
+          "1596621141404": {
+            "type": "question",
+            "settings": {
+              "title": "Où peut-on trouver nos produits ?",
+              "answer": "<p>Nos produits sont disponibles sur l&rsquo;e-shop. Nous sommes &eacute;galement pr&eacute;sents dans des pop-up store (magasins &eacute;ph&eacute;m&egrave;res).<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "page-faq-template-3",
+          "1596620300804",
+          "1596620369215",
+          "1596620386245",
+          "1596620420968",
+          "1596620455108",
+          "page-faq-template-4",
+          "page-faq-template-5",
+          "page-faq-template-6",
+          "1596620701418",
+          "1596620670268",
+          "page-faq-template-7",
+          "page-faq-template-8",
+          "1596620863433",
+          "1596620875322",
+          "1596620886111",
+          "1596620906925",
+          "1596620949383",
+          "1596621070730",
+          "1596621079839",
+          "1596621093499",
+          "1596621107867",
+          "1596621141404"
+        ],
+        "settings": {
         }
       }
     },
