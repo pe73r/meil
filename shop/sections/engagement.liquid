@@ -1,0 +1,353 @@
+<section data-section-type="engagement" data-section-id="{{ section.id }}" class="section-engagement">
+  <div class="container-engagement">
+    {% render 'image-text-overlay' %}
+    {% if section.settings.show-block-heading  %}
+      <header class="Engagement__Heading">
+        <div class="SectionHeader SectionHeader--center">
+           <div class="SectionHeader__Heading Page__Heading Heading u-h1 Page__section-title Engagement__title">
+             {{ section.settings.heading }}
+           </div>
+           <div class="Engagement__Heading-text align-center">
+             {{ section.settings.heading_content }}
+           </div>
+        </div>
+      </header>
+    {% endif %}
+  </div>
+  <div class="container-full">
+      <div class="SectionHeader SectionHeader--center">
+        <h2 class="SectionHeader__Heading Page__Heading Heading u-h1 Engagement__title">{{ section.settings.engagement_title }}</h2>
+      </div>
+      <div class="Engagement__background">
+         <div class="Engagements__blocks relative">
+            {% for block in section.blocks %}
+               <div id="block--{{ block.id }}">
+                 <div class="Engagement__block">
+                    <div class="flex flex--middle flex--center {% if block.settings.reverse == "right" %} flex--rev {% endif %}">
+                      <div class="Engagament__block-text {% if block.settings.reverse == "right" %} ml-100 {% endif %}">
+                         <div class="Engagement__content">
+                           <h3 class="Engagement__title u-h2">{{ block.settings.title }}</h3>
+                           <div class="Engagement__text">
+                             {{ block.settings.content }}
+                           </div>
+                         </div>
+                      </div>
+                      <div class="Engagament__block-image {% if block.settings.reverse == "left" %} ml-100 {% endif %}">
+                        {% if block.settings.video_url != blank %}
+                          <div class="VideoWrapper Video__Engagements relative">
+                              <img class="Button__Video" src="https://cdn.shopify.com/s/files/1/0312/9402/9956/files/play.png?v=1596670593" alt="">
+                              <img class="Video__poster" src="{{ block.settings.poster | img_url:'master' }}" alt="{{ block.settings.poster.alt }}">
+                              {% if block.settings.video_url.type == 'youtube' %}
+                                <iframe class="Image--lazyLoad" src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?showinfo=0&controls=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+                              {% elsif block.settings.video_url.type == 'vimeo' %}
+                                <iframe class="Image--lazyLoad" src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}" frameborder="0"></iframe>
+                              {% endif %}
+                          </div>
+                        {% else %}
+                          <div class="Engagement__image">
+                            {% if block.settings.image != blank %}
+                              <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
+                            {% endif %}
+                          </div>
+                         {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+              <div class="Engagement__newsletter relative">
+                {%  if section.settings.newsletter-image != blank %}
+                 <div class="Engagement__newsletter-image">
+                   <img src="{{ section.settings.newsletter-image | img_url:'master' }}" alt="{{ section.settings.newsletter-image.alt }}">
+                 </div>
+                {% endif %}
+                 <div class="Engagement__newsletter-form">
+                     <div class="u-h1 Newsletter__text align-center">
+                        {{ section.settings.newsletter-text }}
+                     </div>
+                     <div class="Newsletter__form Newsletter__engagements">
+                       {%- form 'customer', id: newsletter_id, class: 'Newsletter Form' -%}
+                         {%- if form.posted_successfully? -%}
+                           <p class="Form__Alert Alert Alert--success">{{ 'home_page.newsletter.success' | t }}</p>
+                         {%- else -%}
+                           {%- if form.errors -%}
+                             <p class="Form__Alert Alert Alert--error">{{ form.errors.messages['email'] }}</p>
+                           {%- endif -%}
+
+                           <div class="Newsletter__Inner">
+                             <input type="hidden" name="contact[tags]" value="newsletter">
+                             <input type="email" name="contact[email]" class="Form__Input Form__input-engagement" aria-label="{{ 'home_page.newsletter.input' | t }}" placeholder="{{ 'home_page.newsletter.input' | t }}" required>
+                             <button type="submit" class="Form__Submit Button Button--Form">{{ 'home_page.newsletter.submit' | t }}</button>
+                           </div>
+                         {%- endif -%}
+                       {%- endform -%}
+                     </div>
+                 </div>
+              </div>
+           </div>
+         </div>
+     </div>
+</section>
+<script>
+  window.addEventListener("load", (event) => {
+
+    let videoPosterList = document.getElementsByClassName('Video__poster');
+    for (let i = 0; i < videoPosterList.length; i++) {
+      	let videoPoster = videoPosterList[i];
+      	videoPoster.addEventListener("click", () => {
+        	videoPoster.parentNode.getElementsByClassName('Button__Video')[0].remove();
+            let attributes = videoPoster.parentNode.getElementsByClassName('Image--lazyLoaded')[0].getAttribute("src");
+  			videoPoster.parentNode.getElementsByClassName('Image--lazyLoaded')[0].setAttribute("src", attributes + "&autoplay=1");
+          	videoPoster.remove();
+    	}, false);
+  	}
+
+    let buttonVideoList = document.getElementsByClassName('Button__Video');
+    for (let i = 0; i < buttonVideoList.length; i++) {
+      	let buttonVideo = buttonVideoList[i];
+      	buttonVideo.addEventListener("click", () => {
+        	buttonVideo.parentNode.getElementsByClassName('Video__poster')[0].remove();
+            let attributes = buttonVideo.parentNode.getElementsByClassName('Image--lazyLoaded')[0].getAttribute("src");
+  			buttonVideo.parentNode.getElementsByClassName('Image--lazyLoaded')[0].setAttribute("src", attributes + "&autoplay=1");
+          	buttonVideo.remove();
+    	}, false);
+  	}
+
+  }, false);
+</script>
+
+<style>
+  .Engagement__background{
+     background: linear-gradient( to right,
+       {{ section.settings.background-left }} 0%,
+       {{ section.settings.background-left }} 50%,
+       {{ section.settings.background-right }} 50%,
+       {{ section.settings.background-right }} 100%
+     );
+   }
+
+   .Engagement__Heading{
+       margin: {{ section.settings.heading_margin }}px auto;
+    }
+
+   {% for block in section.blocks %}
+
+      #block--{{ block.id }} .Engagement__title{
+          color: {{ block.settings.title-color }};
+        }
+      #block--{{ block.id }} .Engagement__text{
+            color: {{ block.settings.text-color }};
+          }
+   {% endfor %}
+
+</style>
+{% schema %}
+{
+  "name": "Engagement",
+  "settings": [
+         {
+           "type": "header",
+           "content": "bannner"
+         },
+         {
+           "type": "select",
+           "id": "section_size",
+           "label": "Section size",
+           "options": [
+             {
+               "value": "small",
+               "label": "Small"
+             },
+             {
+               "value": "normal",
+               "label": "Normal"
+             },
+             {
+               "value": "large",
+               "label": "Large"
+             }
+           ],
+           "default": "large"
+         },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image",
+           "info": "1500 x 800px .jpg recommended"
+         },
+         {
+           "type": "color",
+           "id": "text_color",
+           "label": "Text",
+           "default": "#ffffff"
+         },
+         {
+           "type": "color",
+           "id": "overlay_color",
+           "label": "Overlay",
+           "default": "#000000"
+         },
+         {
+           "type": "range",
+           "id": "overlay_opacity",
+           "label": "Overlay opacity",
+           "min": 0,
+           "max": 100,
+           "step": 1,
+           "unit": "%",
+           "default": 30
+         },
+         {
+           "type": "text",
+           "id": "subheading",
+           "label": "Sub-heading"
+         },
+         {
+           "type": "textarea",
+           "id": "title",
+           "label": "Heading",
+           "default": "Tell your story"
+         },
+         {
+           "type": "richtext",
+           "id": "content",
+           "label": "Text",
+           "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+         },
+         {
+           "type": "header",
+           "content": "Block Heading"
+         },
+         {
+           "type": "checkbox",
+           "id": "show-block-heading",
+           "label": "Show this block ?",
+           "default": true
+         },
+         {
+              "type":      "range",
+              "id":        "heading_margin",
+              "min":       40,
+              "max":        140,
+              "step":       1,
+              "unit":       "px",
+              "label":     "Block spacing",
+              "default":   50
+         },
+         {
+           "type": "text",
+           "id": "heading",
+           "label": "Heading",
+           "default": "Nos convictions"
+         },
+         {
+           "type": "textarea",
+           "id": "heading_content",
+           "label": "Heading content"
+         },
+         {
+           "type": "header",
+           "content": "Block Engagements"
+         },
+         {
+           "type": "text",
+           "id": "engagement_title",
+           "label": "Engagement title",
+           "default": "Concrètement on fait commment"
+         },
+         {
+           "type": "color",
+           "id": "background-right",
+           "label": "Background right",
+           "default": "#FFF9EF"
+         },
+         {
+           "type": "color",
+           "id": "background-left",
+           "label": "Background left",
+           "default": "#fff"
+         },
+         {
+           "type": "header",
+           "content": "Block Newsletter"
+         },
+         {
+           "type": "textarea",
+           "id": "newsletter-text",
+           "label": "newsletter text"
+         },
+         {
+           "type": "image_picker",
+           "id": "newsletter-image",
+           "label": "Newsletter image"
+         }
+  ],
+  "blocks": [
+        {
+          "type": "engagement",
+          "name": "Engagement",
+          "settings": [
+          {
+             "type":      "select",
+             "id":        "reverse",
+             "label":     "Text",
+             "options": [
+               {
+                 "value": "right",
+                 "label": "Right"
+               },
+               {
+                 "value": "left",
+                 "label": "Left"
+               }
+             ],
+             "default":   "right"
+          },
+          {
+            "type": "color",
+            "id": "title-color",
+            "label": "Title color",
+            "default": "#000"
+          },
+          {
+            "type": "color",
+            "id": "text-color",
+            "label": "Text color",
+            "default": "#000"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Content",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "image"
+          },
+          {
+            "type": "image_picker",
+            "id": "poster",
+            "label": "poster",
+            "info": "1500 x 800px .jpg recommended."
+          },
+          {
+            "id": "video_url",
+            "type": "video_url",
+            "label": "Video URL",
+            "accept": ["youtube", "vimeo"],
+            "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "info": "If video is empty will display the image"
+          }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -11801,12 +11801,43 @@ $gutter : 20px;
   text-align: center;
 }
 
+.ml-100{
+  margin-left: 100px;
+}
+
+.flex{
+  display: flex;
+}
+
+.flex--rev {
+   flex-direction: row-reverse;
+}
+
+.flex--middle {
+  align-items: center;
+}
+
+.flex--center{
+  justify-content: center;
+}
+
+@include av-mq('phone') {
+  .flex{
+    flex-direction: column;
+  }
+  .ml-100{
+    margin-left: 0;
+  }
+}
+
 /*================ Morphologie page ================*/
 
 .container-morphologie{
   width: 90%;
   max-width: 1000px;
   margin: auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .Page__Header{
@@ -11858,14 +11889,6 @@ $gutter : 20px;
   padding-left: 70px;
 }
 
-.Morphologie__flex{
-  display: flex;
-}
-
-.flex--rev {
-   flex-direction: row-reverse;
-}
-
 .Morphology__image{
   margin-top: 50px;
   max-width: 400px;
@@ -11902,9 +11925,6 @@ $gutter : 20px;
      padding: 50px 0;
   }
 
-  .Morphologie__flex{
-    flex-direction: column;
-  }
 
   .Morphologie__text-block{
     width: 100%;
@@ -11940,7 +11960,8 @@ $gutter : 20px;
 
 .section-faqs{
   background-color: $beige;
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .container-faqs{
@@ -11960,7 +11981,7 @@ $gutter : 20px;
 .Faq__Item{
   color: $heading-color;
   padding: 15px 10px;
-  border: 1px solid $heading-color  ;
+  border: 1px solid $heading-color;
 }
 
 .Faq__Heading{
@@ -11991,7 +12012,236 @@ $gutter : 20px;
       padding: 20px;
   }
   .section-faqs {
-      padding: 0;
+    padding: 40px 0;
   }
+
+}
+
+/*================ Engagement  ================*/
+
+.container-engagement{
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+   padding-top: 50px;
+}
+
+.ImageHero__Engagement{
+    position: absolute;
+    /* flex-basis: 379px; */
+    right: 10%;
+    text-align: left;
+    max-width: 400px;
+}
+
+.Engagement__Heading{
+  margin: 60px auto;
+}
+
+.Engagement__Heading-text{
+   margin-top: 50px;
+}
+
+.ImageHero__Engagement-title{
+  font-family: $custom-font;
+  font-weight: 700;
+  line-height: 1.1;
+  text-shadow: none;
+  font-size: 40px;
+}
+
+.Engagement__background {
+  height: 100%;
+  width: 100%;
+}
+
+.Engagements__blocks{
+   width: 80%;
+   max-width: 1100px;
+   margin: auto;
+}
+
+.Engagement__block{
+   padding-bottom: 80px;
+}
+
+.Engagement__content{
+  max-width: 100%;
+}
+
+.Engagement__title{
+  font-family: $custom-font;
+  font-weight: 700;
+  line-height: 1.1;
+  text-shadow: none;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.Engagement__text{
+  line-height: 2.2;
+  text-align: justify;
+  font-size: initial;
+}
+
+.Engagement__image{
+   max-width: 950%;
+   margin: auto;
+    img{
+      width: 100%;
+    }
+}
+
+
+.Engagament__block-text,
+.Engagament__block-image{
+  width: 50%;
+}
+
+.Engagement__newsletter{
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.Engagement__newsletter-form{
+   min-height: 200px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background-color: white;
+   padding: 30px;
+}
+
+.Engagement__newsletter-image{
+   img{
+     width: 100%;
+   }
+}
+
+.Newsletter__text{
+  font-family: $custom-font;
+  color: $heading-color;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+
+
+.Newsletter__engagements{
+  .Button--Form{
+    background-color: $heading-color;
+    color: white;
+    border: none;
+    margin: 0;
+    max-width: 150px;
+    text-transform: inherit;
+    font-weight: 700;
+  }
+  .Form__Input{
+    background-color: $beige;
+    border: none;
+    color: $heading-color;
+    min-width: 200px;
+    width: 250px;
+    font-size: 14px;
+  }
+  .Form__Input::placeholder{
+       color: inherit !important;
+       opacity: 1;
+       display: block;
+       font-size: 14px;
+       line-height: 20px;
+     }
+  }
+
+  .Video__Engagements{
+     max-width: 100%;
+     position: relative;
+     padding-bottom: 56.25%;
+     height: 0;
+     overflow: hidden;
+     margin: auto;
+     min-height: 350px;
+  }
+
+  .Video__poster{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+
+  .Button__Video{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    cursor: pointer;
+    background-size: cover;
+    opacity: .6;
+ }
+
+@include av-mq('phone') {
+
+  .Engagements__blocks{
+     width: 100%;
+  }
+
+  .ImageHero__Engagement-title{
+     font-size: 34px;
+  }
+
+  .Engagement__title{
+    font-size: 30px;
+  }
+
+  .Engagament__block-text,
+  .Engagament__block-image{
+    width: 100%;
+  }
+
+  .Engagement__content{
+    max-width: 100%;
+    padding: 30px 20px;
+    background-color: white;
+
+  }
+  .Engagement__image{
+     max-width: 90%;
+  }
+
+  .Video__Engagements{
+     max-width: 90%;
+  }
+
+  .Newsletter__engagements{
+     .Form__Input{
+       width: 100%;
+       margin-bottom: 15px;
+     }
+     .Button--Form{
+       max-width: 100%;
+     }
+  }
+
+  .Engagement__newsletter {
+    min-height: 500px;
+   }
+
+  .Engagement__newsletter-image{
+    width: 90%;
+    margin: auto;
+  }
+
+  .Engagement__newsletter-form {
+   width: 90%;
+  }
+
 
 }

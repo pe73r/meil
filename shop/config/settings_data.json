@@ -680,41 +680,6 @@
               "answer": "<p>Les colis exp&eacute;di&eacute;s via Colissimo en France m&eacute;tropolitaine sont livr&eacute;s sous 2 jours ouvrables.<\/p>\n<p>Les colis exp&eacute;di&eacute;s via Colissimo dans les Dom-Tom sont livr&eacute;s sous 7 jours ouvr&eacute;s.<\/p>\n<p>Les colis exp&eacute;di&eacute;s via TNT dans les pays d&rsquo;Europe sont livr&eacute;s sous 2 jours ouvrables.<\/p>"
             }
           },
-          "page-faq-template-4": {
-            "type": "separator",
-            "settings": {
-              "title": "Retour et remboursement",
-              "picto": "shopify:\/\/shop_images\/undo.png"
-            }
-          },
-          "page-faq-template-5": {
-            "type": "question",
-            "settings": {
-              "title": "Effectuer un retour en France Métropolitaine",
-              "answer": "<p>Vous disposez d&rsquo;un d&eacute;lai de 15 jours apr&egrave;s r&eacute;ception de votre commande pour nous retourner vos pi&egrave;ces contre remboursement, &eacute;change ou avoir, si elles ne vous ne conviennent pas.<\/p>\n<p>A noter qu&rsquo;un retour par commande seulement est pris en charge : si dans le cadre d'un &eacute;change, le nouveau produit ne convenait toujours pas, les frais des retours suivants sont &agrave; votre charge.&nbsp;Les pi&egrave;ces dont l&rsquo;&eacute;tiquette a &eacute;t&eacute; d&eacute;tach&eacute;e ne pourront faire l&rsquo;objet d&rsquo;un retour.<\/p>"
-            }
-          },
-          "page-faq-template-6": {
-            "type": "question",
-            "settings": {
-              "title": "Effectuer un retour depuis un autre pays ou Dom\/Tom",
-              "answer": "<p>Les retours depuis l'&eacute;tranger, ainsi que les DOM TOM sont &agrave; votre charge. Attention cependant, il faut que les produits soient retourn&eacute;s dans un d&eacute;lai de 30 jours. Les pi&egrave;ces dont l&rsquo;&eacute;tiquette a &eacute;t&eacute; d&eacute;tach&eacute;e ne pourront faire l&rsquo;objet d&rsquo;un retour.<\/p>"
-            }
-          },
-          "page-faq-template-7": {
-            "type": "separator",
-            "settings": {
-              "title": "Paiement",
-              "picto": "shopify:\/\/shop_images\/credit-card.png"
-            }
-          },
-          "page-faq-template-8": {
-            "type": "question",
-            "settings": {
-              "title": "Quels sont les moyens de paiement ?",
-              "answer": "<p>Nous acceptons les paiements par carte bancaire et par Paypal. Tous les paiements sont bien s&ucirc;rs s&eacute;curis&eacute;s.&nbsp;<\/p>"
-            }
-          },
           "1596620300804": {
             "type": "question",
             "settings": {
@@ -750,11 +715,25 @@
               "answer": "<p>Malheureusement, une fois votre colis retourn&eacute; &agrave; notre Atelier, celui-ci ne pourra vous &ecirc;tre r&eacute;exp&eacute;di&eacute; et sera automatiquement rembours&eacute; dans un d&eacute;lai de 7 jours ouvr&eacute;s.<\/p>"
             }
           },
-          "1596620670268": {
+          "page-faq-template-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Retour et remboursement",
+              "picto": "shopify:\/\/shop_images\/undo.png"
+            }
+          },
+          "page-faq-template-5": {
             "type": "question",
             "settings": {
-              "title": "Ma pièce présente un défaut",
-              "answer": "<p>Nous nous excusons si le produit pr&eacute;sente un d&eacute;faut malgr&eacute; tous nos contr&ocirc;les qualit&eacute;. Nous vous invitons &agrave; contacter le service client &agrave; l&rsquo;adresse <a href=\"mailto:bonjour@meila-paris.com\">bonjour@meila-paris.com<\/a>. N&rsquo;oubliez pas de joindre &agrave; votre message des photos de votre pi&egrave;ce d&eacute;fectueuse, cela nous aidera &agrave; vous proposer la meilleure solution.<\/p>"
+              "title": "Effectuer un retour en France Métropolitaine",
+              "answer": "<p>Vous disposez d&rsquo;un d&eacute;lai de 15 jours apr&egrave;s r&eacute;ception de votre commande pour nous retourner vos pi&egrave;ces contre remboursement, &eacute;change ou avoir, si elles ne vous ne conviennent pas.<\/p>\n<p>A noter qu&rsquo;un retour par commande seulement est pris en charge : si dans le cadre d'un &eacute;change, le nouveau produit ne convenait toujours pas, les frais des retours suivants sont &agrave; votre charge.&nbsp;Les pi&egrave;ces dont l&rsquo;&eacute;tiquette a &eacute;t&eacute; d&eacute;tach&eacute;e ne pourront faire l&rsquo;objet d&rsquo;un retour.<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "Effectuer un retour depuis un autre pays ou Dom\/Tom",
+              "answer": "<p>Les retours depuis l'&eacute;tranger, ainsi que les DOM TOM sont &agrave; votre charge. Attention cependant, il faut que les produits soient retourn&eacute;s dans un d&eacute;lai de 30 jours. Les pi&egrave;ces dont l&rsquo;&eacute;tiquette a &eacute;t&eacute; d&eacute;tach&eacute;e ne pourront faire l&rsquo;objet d&rsquo;un retour.<\/p>"
             }
           },
           "1596620701418": {
@@ -762,6 +741,27 @@
             "settings": {
               "title": "Délai de remboursement",
               "answer": "<p>Vous recevrez un email pour vous pr&eacute;venir lorsque nous recevrons votre colis de retour ainsi que lorsque le remboursement aura &eacute;t&eacute; effectu&eacute;. Comptez environ 7 &agrave; 10 jours ouvr&eacute;s pour laisser le temps &agrave; notre Atelier de traiter votre colis retour.<br> Notez que le remboursement d'une commande r&eacute;gl&eacute;e avec une carte cadeau ou un avoir, sera effectu&eacute; automatiquement en avoir.<\/p>"
+            }
+          },
+          "1596620670268": {
+            "type": "question",
+            "settings": {
+              "title": "Ma pièce présente un défaut",
+              "answer": "<p>Nous nous excusons si le produit pr&eacute;sente un d&eacute;faut malgr&eacute; tous nos contr&ocirc;les qualit&eacute;. Nous vous invitons &agrave; contacter le service client &agrave; l&rsquo;adresse <a href=\"mailto:bonjour@meila-paris.com\">bonjour@meila-paris.com<\/a>. N&rsquo;oubliez pas de joindre &agrave; votre message des photos de votre pi&egrave;ce d&eacute;fectueuse, cela nous aidera &agrave; vous proposer la meilleure solution.<\/p>"
+            }
+          },
+          "page-faq-template-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Paiement",
+              "picto": "shopify:\/\/shop_images\/credit-card.png"
+            }
+          },
+          "page-faq-template-8": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les moyens de paiement ?",
+              "answer": "<p>Nous acceptons les paiements par carte bancaire et par Paypal. Tous les paiements sont bien s&ucirc;rs s&eacute;curis&eacute;s.&nbsp;<\/p>"
             }
           },
           "1596620863433": {
@@ -864,6 +864,103 @@
           "1596621141404"
         ],
         "settings": {
+          "heading": "Nos réponses à vos questions"
+        }
+      },
+      "engagement": {
+        "type": "engagement",
+        "blocks": {
+          "1596639318561": {
+            "type": "engagement",
+            "settings": {
+              "reverse": "right",
+              "title-color": "#363636",
+              "text-color": "#363636",
+              "title": "Confort",
+              "content": "Nous vous garantissons un confort inégalable. Nos\nproduits sont pensés pour vous accompagner dans votre\nquotidien et vous assurent confort et douceur. C’est\npourquoi chaque modèle est doublé en coton pour que\nvos parties intimes soient protégées et respectées.",
+              "image": "shopify:\/\/shop_images\/Layer_12.png",
+              "poster": "shopify:\/\/shop_images\/Layer_14.png",
+              "video_url": ""
+            }
+          },
+          "1596639509964": {
+            "type": "engagement",
+            "settings": {
+              "reverse": "left",
+              "title-color": "#333333",
+              "text-color": "#4e4e4e",
+              "title": "Elegance",
+              "content": "Elégante et féminine, c’est l’effet ressenti quand vous\nporterez nos ensembles. Pour cela nous utilisons des\nmatières délicates telles que la tulle brodée de Suisse et la\ndentelle de Calais. Elles apportent la touche de féminité et\nd’élégance pour se sentir belle et confiante.",
+              "image": "shopify:\/\/shop_images\/Layer_13.png",
+              "poster": "shopify:\/\/shop_images\/Layer_14.png",
+              "video_url": ""
+            }
+          },
+          "1596642373612": {
+            "type": "engagement",
+            "settings": {
+              "reverse": "right",
+              "title-color": "#000",
+              "text-color": "#000",
+              "title": "Éthique",
+              "content": "Nous sélectionnons des matières responsables,\nqu’elles soient naturelles ou recyclées et toujours\ncertifiées pour garantir la traçabilité des fibres,\nassurer la protection des travailleurs sur l’ensemble\nde la chaîne et respecter l’environnement.",
+              "image": "shopify:\/\/shop_images\/Layer_14.png",
+              "poster": "",
+              "video_url": ""
+            }
+          },
+          "1596643260500": {
+            "type": "engagement",
+            "settings": {
+              "reverse": "left",
+              "title-color": "#000",
+              "text-color": "#000",
+              "title": "",
+              "content": "Nous travaillons avec des fournisseurs solides et de qualité.\nIls sont exclusivement européens, ce qui limite notre impact\ncarbone. L’écoresponsabilité est nouveau dans l’industrie du\ntextile, nous rendons régulièrement visite à nos fournisseurs\npour échanger avec eux, notamment sur le développement\nde nouvelles matières responsables. Nous réalisons des\npetits portaits ou reportages sur eux car il est essentiel pour\nnous d’être transparent sur qui et comment sont fabriqués\nvos dessous (lien vers la page fournisseur).",
+              "image": "shopify:\/\/shop_images\/Layer_14.png",
+              "poster": "shopify:\/\/shop_images\/Layer_14.png",
+              "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+            }
+          },
+          "1596643657062": {
+            "type": "engagement",
+            "settings": {
+              "reverse": "right",
+              "title-color": "#000",
+              "text-color": "#000",
+              "title": "Inclusivité",
+              "content": "Parce que la lingerie est l’affaire de toutes, nous vous proposons\nplusieurs formes pour répondre à tous les corps. Nous travaillons\npour développer notre gamme et élargir le choix des tailles.<br><br>\nNous vous écoutons. Nous réalisons des questionnaires pour connaître\nvos envies et besoins, tant en termes de style, de forme, de matières…\nEt nous aimerions aller plus loin en vous rendant actrices des futurs\nplans de collection, dans le choix des designs et des coloris.",
+              "image": "shopify:\/\/shop_images\/Layer_25.png",
+              "poster": "",
+              "video_url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1596639318561",
+          "1596639509964",
+          "1596642373612",
+          "1596643260500",
+          "1596643657062"
+        ],
+        "settings": {
+          "section_size": "small",
+          "image": "shopify:\/\/shop_images\/Layer_24.png",
+          "text_color": "#323232",
+          "overlay_color": "#f8b733",
+          "overlay_opacity": 20,
+          "subheading": "",
+          "title": "La lingerie <br>\nresponsable qui<br>\nréconcilie le confort <br>\net l'esthetique, voilà <br>\nnotre ambition",
+          "content": "",
+          "show-block-heading": true,
+          "heading_margin": 100,
+          "heading": "Nos convictions",
+          "heading_content": "Le développement durable c'est pas un effet de mode.<br><br>\nLa lingerie peut être feminine ET responsable.",
+          "engagement_title": "Concrètement on fait commment",
+          "background-right": "#f4e7cd",
+          "background-left": "#fff",
+          "newsletter-text": "Pour participer à la creation de<br>\nnos prochaines collections et ne<br>\npas louper leur lancement <br>\ninscrivez vous juste ici.",
+          "newsletter-image": "shopify:\/\/shop_images\/Layer_9.png"
         }
       }
     },
