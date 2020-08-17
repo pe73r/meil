@@ -962,6 +962,224 @@
           "newsletter-text": "Pour participer à la creation de<br>\nnos prochaines collections et ne<br>\npas louper leur lancement <br>\ninscrivez vous juste ici.",
           "newsletter-image": "shopify:\/\/shop_images\/Layer_9.png"
         }
+      },
+      "page-faq-template-new": {
+        "type": "page-faq-template-new",
+        "blocks": {
+          "page-faq-template-new-0": {
+            "type": "separator",
+            "settings": {
+              "title": "Livraison et suivi de commande",
+              "picto": "shopify:\/\/shop_images\/Layer_21.png"
+            }
+          },
+          "page-faq-template-new-1": {
+            "type": "question",
+            "settings": {
+              "title": "Livrez-vous à l’international ?",
+              "answer": "<p> <\/p>\n<p>Nous livrons dans la plupart des pays d’Europe et Dom-Tom (voir la liste complète ci-dessous), des frais de livraison supplémentaires sont à prévoir selon la destination.<\/p><br>\n<p>Zone 1 :<\/p>\n<p>Guadeloupe Martinique Mayotte Réunion Guyane Saint Pierre et Miquelon Saint Martin Saint Barthélémy<\/p>\n<br>\n<p>Zone 2 :<\/p>\n<p>Polynésie Française Nouvelle Calédonie<\/p>\n<br>\n<p>Zone 3 :<\/p>\n<p>Allemagne Belgique Luxembourg Pays-Bas Andorre Espagne Italie San Marin Vatican Autriche Danemark Finlande Irlande Portugal Royaume-Uni Suède <\/p>"
+            }
+          },
+          "page-faq-template-new-2": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les délais de traitement de ma commande ?",
+              "answer": "Les Commandes sont préparées et expédiées dans les 72H suivant votre commande (hors période de fêtes de fin d'année et hors week-end et jours fériés)\nDans les périodes de forte activité, la préparation de la commande peut prendre un peu plus de temps (4\/5 jours).<br><br>\nVous serez prévenu par e-mail dès l’expédition de votre colis et vous recevrez le numéro de suivi de votre commande pour être tenu informé du bon acheminement de votre colis. "
+            }
+          },
+          "page-faq-template-new-3": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les délais de livraison de ma commande ?",
+              "answer": "<p>Les colis expédiés via Colissimo en France métropolitaine sont livrés sous 2 jours ouvrables.<\/p>\n<br>\n<p>Les colis expédiés via Colissimo dans les Dom-Tom sont livrés sous 7 jours ouvrés.<\/p><br> <p>Les colis expédiés via TNT dans les pays d’Europe sont livrés sous 2 jours ouvrables.<\/p><p><\/p>"
+            }
+          },
+          "page-faq-template-new-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Retour et remboursement",
+              "picto": "shopify:\/\/shop_images\/undo.png"
+            }
+          },
+          "page-faq-template-new-5": {
+            "type": "question",
+            "settings": {
+              "title": "Effectuer un retour en France Métropolitaine",
+              "answer": "Vous disposez d’un délai de 15 jours après réception de votre commande pour nous retourner vos pièces contre remboursement, échange ou avoir, si elles ne vous ne conviennent pas. <br>\nA noter qu’un retour par commande seulement est pris en charge : si dans le cadre d'un échange, le nouveau produit ne convenait toujours pas, les frais des retours suivants sont à votre charge. Les pièces dont l’étiquette a été détachée ne pourront faire l’objet d’un retour."
+            }
+          },
+          "page-faq-template-new-6": {
+            "type": "question",
+            "settings": {
+              "title": "Effectuer un retour depuis un autre pays ou Dom\/Tom",
+              "answer": "Les retours depuis l'étranger, ainsi que les DOM TOM sont à votre charge. Attention cependant, il faut que les produits soient retournés dans un délai de 30 jours. Les pièces dont l’étiquette a été détachée ne pourront faire l’objet d’un retour."
+            }
+          },
+          "page-faq-template-new-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Paiement",
+              "picto": "shopify:\/\/shop_images\/credit-card.png"
+            }
+          },
+          "page-faq-template-new-8": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les moyens de paiement ?",
+              "answer": "Nous acceptons les paiements par carte bancaire et par Paypal. Tous les paiements sont bien sûrs sécurisés. "
+            }
+          },
+          "1597352063171": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les coûts de livraison ?",
+              "answer": "<p>Livraison en point relais via Mondial Relay (France Métropolitaine hors Corse) : 4,50€ TTC, offert à partir de 100€ d'achat. <br>\nLivraison à domicile via Colissimo, sans signature (France Métropolitaine) : 6€ TTC, offert à partir de 100€ d’achat.\n<br><br>\nIls varient en fonction des autres destinations d'envoi :<br>\nZone 1 : les frais de livraison sont de 9,60 euros TTC via Colissimo.<br><br>\nZone 2 : les frais de livraison sont de 12 euros TTC via Colissimo.<br><br>\nZone 3 : les frais de livraisons sont de 15 euros TTC via TNT <\/p>"
+            }
+          },
+          "1597352443751": {
+            "type": "question",
+            "settings": {
+              "title": "Que faire si j’ai un souci de livraison ?",
+              "answer": "Nous vous invitons à contacter notre Service Client par mail à l’adresse bonjour@meila-paris.com. A tout problème, une solution !"
+            }
+          },
+          "1597352457977": {
+            "type": "question",
+            "settings": {
+              "title": "Comment puis-je suivre mon colis ?",
+              "answer": "Une fois votre colis déposer auprès de notre prestataire, il vous suffit de cliquer sur le lien ci-dessous correspondant à votre mode de livraison choisi et de rentrer le numéro de suivi (indiqué sur votre mail d’expédition) de commande pour savoir où en est l’acheminement.<br><br>  Colissimo (rubrique suivre mon Colis) : http:\/\/www.colissimo.fr\/particuliers\/home.jsp Mondial Relay : http:\/\/www.mondialrelay.fr\/suivi-de-colis\/\nDHL : http:\/\/www.dhl.fr\/fr\/dhl_express\/suivi_expedition.html"
+            }
+          },
+          "1597352558383": {
+            "type": "question",
+            "settings": {
+              "title": "Je me suis trompée d’adresse, de modèle, de taille lors de ma commande, que faire ?",
+              "answer": "Nous vous invitons à contacter notre Service Client par mail à l’adresse bonjour@meila-paris.com. Nous ferons notre maximum pour prendre en compte votre modification dans la mesure du possible (si votre commande n’a pas encore été préparée ou expédiée). <br>Mais rassurez-vous si votre commande a déjà été expédiée vous pourrez dès sa réception effectuer un retour gratuitement en suivant la procédure via votre compte client et l'historique de vos commandes."
+            }
+          },
+          "1597352583216": {
+            "type": "question",
+            "settings": {
+              "title": "Mon colis a été retourné à l’expéditeur, que faire ?",
+              "answer": "Malheureusement, une fois votre colis retourné à notre Atelier, celui-ci ne pourra vous être réexpédié et sera automatiquement remboursé dans un délai de 7 jours ouvrés."
+            }
+          },
+          "1597352677383": {
+            "type": "question",
+            "settings": {
+              "title": "Délai de remboursement",
+              "answer": "Vous recevrez un email pour vous prévenir lorsque nous recevrons votre colis de retour ainsi que lorsque le remboursement aura été effectué. Comptez environ 7 à 10 jours ouvrés pour laisser le temps à notre Atelier de traiter votre colis retour.<br> Notez que le remboursement d'une commande réglée avec une carte cadeau ou un avoir, sera effectué automatiquement en avoir."
+            }
+          },
+          "1597352702511": {
+            "type": "question",
+            "settings": {
+              "title": "Ma pièce présente un défaut",
+              "answer": "Nous nous excusons si le produit présente un défaut malgré tous nos contrôles qualité. Nous vous invitons à contacter le service client à l’adresse bonjour@meila-paris.com. N’oubliez pas de joindre à votre message des photos de votre pièce défectueuse, cela nous aidera à vous proposer la meilleure solution."
+            }
+          },
+          "1597352751080": {
+            "type": "question",
+            "settings": {
+              "title": "Le paiement est-il sécurisé ?",
+              "answer": "Vos informations bancaires ne sont jamais en notre possession. Les transactions sont entièrement traitées par le module de paiement sécurisé de notre partenaire Shopify. Le paiement est totalement sécurisé."
+            }
+          },
+          "1597352766441": {
+            "type": "question",
+            "settings": {
+              "title": "Comment payer ma commande avec une carte cadeau ou un avoir ?",
+              "answer": "Lorsque vous validerez votre panier vous aurez la possibilité de rentrer le code de votre carte cadeau ou avoir dans l’encart prévu à cet effet."
+            }
+          },
+          "1597352788082": {
+            "type": "question",
+            "settings": {
+              "title": "Mon paiement a été refusé",
+              "answer": "Si votre paiement n’a pu aboutir, n’hésitez pas à repasser votre commande avec un autre moyen de paiement.<br><br>  Si malgré cela, vous ne parvenez pas à régler votre commande, n’hésitez pas à contacter notre Service Client à l’adresse bonjour@meila-paris.com."
+            }
+          },
+          "1597352813772": {
+            "type": "question",
+            "settings": {
+              "title": "Comment accéder à ma facture ?",
+              "answer": "Une facture vous a été transmise par mail à la suite de votre achat avec le récapitulatif de la commande. Si vous ne retrouvez plus la facture n’hésitez pas à nous écrire à l’adresse bonjour@meila-paris.com, nous vous transmettrons un autre exemplaire."
+            }
+          },
+          "1597352846679": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont nos lieux de fabrication ?",
+              "answer": "Vous pouvez consulter la rubrique Nos fournisseurs dans le menu déroulant de la page d’accueil. Nous présentons l’ensemble de nos fournisseurs de matières premières ainsi que les usines de fabrication."
+            }
+          },
+          "1597352862897": {
+            "type": "question",
+            "settings": {
+              "title": "Comment sont fixés nos prix ?",
+              "answer": "Nos prix sont fixés pour vous offrir la meilleure qualité possible dans nos produits. Nos matières sont responsables et cela implique un surcoût par rapport aux autres matières, environ 30%. Nous veillons à ce que nos fournisseurs soient européens, cela impact également notre prix puisque les salaires et les normes sont plus importants que dans d’autres pays. Enfin notre fabrication est française, c’est cela qui revient le plus cher dans la conception de nos produits, environ deux fois plus cher qu’un autre pays d’Europe et quatre fois plus cher qu’un pays hors Europe."
+            }
+          },
+          "1597352879649": {
+            "type": "question",
+            "settings": {
+              "title": "Comment choisir la taille la mieux adaptée à ma morphologie ?",
+              "answer": "Vous pouvez consulter la rubrique Conseil dans le menu déroulant de la page d’accueil. Nous vous donnerons toutes les informations nécessaires pour vous aidez au mieux dans le choix de votre lingerie."
+            }
+          },
+          "1597352888181": {
+            "type": "question",
+            "settings": {
+              "title": "Que veut dire « flux léger » pour la culotte menstruelle ?",
+              "answer": "La culotte menstruelle que nous proposons est uniquement conçue pour des flux légers. Elle est composée d’une couche de bouclette en coton bio pour la partie absorbante, d’une couche de membrane imperméable et respirante pour éviter les fuites 😉 et d’un fond de culotte en coton. La matière en contact avec votre peau est comme les autres bas des lignes Meïla, c’est-à-dire le coton. Pour les flux plus abondants, il serait nécessaire d’ajouter plusieures couches de bouclettes, ce qui n’est pas le cas de notre modèle. C’est pour cela que la culotte menstruelle Meïla convient aux femmes qui ont des flux légers et ne portent généralement que des protège-slips en période de règles, ou pour les derniers jours de règles, moins abondants. \nConseil lavage : rincer la culotte après utilisation et laver à 30°. N’utilisez pas de sèche-linge mais un séchage naturel."
+            }
+          },
+          "1597352902199": {
+            "type": "question",
+            "settings": {
+              "title": "Où peut-on trouver nos produits ?",
+              "answer": "Nos produits sont disponibles sur l’e-shop. Nous sommes également présents dans des pop-up store (magasins éphémères)."
+            }
+          },
+          "1597357524339": {
+            "type": "separator",
+            "settings": {
+              "title": "Produits et tailles",
+              "picto": "shopify:\/\/shop_images\/bikini.png"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-new-0",
+          "page-faq-template-new-1",
+          "page-faq-template-new-2",
+          "page-faq-template-new-3",
+          "1597352063171",
+          "1597352443751",
+          "1597352457977",
+          "1597352558383",
+          "1597352583216",
+          "page-faq-template-new-4",
+          "page-faq-template-new-5",
+          "page-faq-template-new-6",
+          "1597352677383",
+          "1597352702511",
+          "page-faq-template-new-7",
+          "page-faq-template-new-8",
+          "1597352751080",
+          "1597352766441",
+          "1597352788082",
+          "1597352813772",
+          "1597357524339",
+          "1597352846679",
+          "1597352862897",
+          "1597352879649",
+          "1597352888181",
+          "1597352902199"
+        ],
+        "settings": {
+          "heading": "Nos réponses à vos questions"
+        }
       }
     },
     "content_for_index": [
