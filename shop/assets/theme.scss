@@ -11799,7 +11799,7 @@ $gutter : 20px;
        }
    }
 
-   /*================ Containers ================*/
+/*================ Containers ================*/
 
 
 .container-small {
@@ -11826,7 +11826,16 @@ $gutter : 20px;
   font-size: 0;
 }
 
+/*================ Headings ================*/
+
+.Page__Heading{
+  font-family: $custom-font;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 /*================ Utilities ================*/
+
 
 .relative{
    position: relative;
@@ -11865,6 +11874,7 @@ $gutter : 20px;
   }
 }
 
+
 /*================ Morphologie page ================*/
 
 .container-morphologie{
@@ -11888,11 +11898,6 @@ $gutter : 20px;
     height: 100%;
 }
 
-.Page__Heading{
-  font-family: $custom-font;
-  font-weight: 500;
-  line-height: 1.2;
-}
 
 .Morphology__block{
    padding: 60px 0;
@@ -12322,7 +12327,7 @@ $gutter : 20px;
  position: absolute;
  color: $heading-color;
  font-size: 25px;
- right: 0; 
+ right: 0;
  top:-8px;
 
 }
@@ -12337,4 +12342,27 @@ $gutter : 20px;
  padding: 0;
  border: 0;
  margin-left: -12px;
+}
+
+
+//// fournisseurs /////
+
+.Fournisseurs__header{
+  padding-top: 50px;
+}
+
+.container-fournisseurs{
+   width: 90%;
+   max-width: 1300px;
+   margin: auto;
+}
+
+.Fournisseurs__Heading-text{
+   max-width: 1000px;
+   margin: auto;
+   margin-top: 50px;
+}
+
+.Fournisseurs__text-image{
+
 }

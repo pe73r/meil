@@ -1,0 +1,181 @@
+<section data-section-type="fournisseurs" data-section-id="{{ section.id }}" class="Fournisseurs__header">
+  <div class="container-fournisseurs">
+    {% if section.settings.show-block-heading  %}
+      <header class="Engagement__Heading Fournisseurs__Heading">
+        <div class="SectionHeader SectionHeader--center">
+           <div class="SectionHeader__Heading Page__Heading Heading u-h1 Page__section-title Engagement__title">
+             {{ section.settings.heading }}
+           </div>
+           <div class="Fournisseurs__Heading-text align-center">
+             {{ section.settings.heading_content }}
+           </div>
+        </div>
+      </header>
+    {% endif %}
+    {% render 'image-text-overlay' %}
+  </div>
+</section>
+
+<style>
+   .Fournisseurs__header{
+      background-color: {{ section.settings.background-color }};
+    }
+
+   .Fournisseurs__Heading{
+       margin: {{ section.settings.heading_margin }}px auto;
+    }
+
+
+//
+</style>
+{% schema %}
+{
+  "name": "Fournisseurs Heading",
+  "settings": [
+        {
+          "type": "color",
+          "id": "background-color",
+          "label": "Background color",
+          "default": "#fff9ef"
+        },
+        {
+          "type": "header",
+          "content": "Block Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "show-block-heading",
+          "label": "Show this block ?",
+          "default": true
+        },
+        {
+             "type":      "range",
+             "id":        "heading_margin",
+             "min":       40,
+             "max":        140,
+             "step":       1,
+             "unit":       "px",
+             "label":     "Block spacing",
+             "default":   50
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Nos collaborateurs"
+        },
+        {
+          "type": "textarea",
+          "id": "heading_content",
+          "label": "Heading content"
+        },
+         {
+           "type": "header",
+           "content": "bannner"
+         },
+         {
+           "type": "select",
+           "id": "section_size",
+           "label": "Section size",
+           "options": [
+             {
+               "value": "small",
+               "label": "Small"
+             },
+             {
+               "value": "normal",
+               "label": "Normal"
+             },
+             {
+               "value": "large",
+               "label": "Large"
+             }
+           ],
+           "default": "large"
+         },
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image",
+           "info": "1500 x 800px .jpg recommended"
+         },
+         {
+           "type": "color",
+           "id": "text_color",
+           "label": "Text",
+           "default": "#ffffff"
+         },
+         {
+           "type": "color",
+           "id": "overlay_color",
+           "label": "Overlay",
+           "default": "#000000"
+         },
+         {
+           "type": "range",
+           "id": "overlay_opacity",
+           "label": "Overlay opacity",
+           "min": 0,
+           "max": 100,
+           "step": 1,
+           "unit": "%",
+           "default": 30
+         },
+         {
+           "type": "text",
+           "id": "subheading",
+           "label": "Sub-heading"
+         },
+         {
+           "type": "textarea",
+           "id": "title",
+           "label": "Heading",
+           "default": "Tell your story"
+         },
+         {
+           "type": "richtext",
+           "id": "content",
+           "label": "Text",
+           "default": "<p>Add your own custom content to give more information about your store, availability details...</p>"
+         },
+         {
+           "type": "header",
+           "content": "Block two images"
+         },
+         {
+           "type": "image_picker",
+           "id": "image-left",
+           "label": "Image-left"
+         },
+         {
+           "type": "image_picker",
+           "id": "image-right",
+           "label": "Image-right"
+         },
+         {
+           "type": "header",
+           "content": "Block map"
+         },
+         {
+           "type": "image_picker",
+           "id": "map",
+           "label": "Map image"
+         }
+  ],
+  "blocks": [
+        {
+          "type": "fournisseur",
+          "name": "Fournisseur",
+          "settings": [
+              {
+                "type": "image_picker",
+                "id": "flag",
+                "label": "flag"
+              }
+
+
+      ]
+    }
+  ]
+}
+{% endschema %}

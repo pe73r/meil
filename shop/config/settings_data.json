@@ -994,41 +994,6 @@
               "answer": "<p>Les colis expédiés via Colissimo en France métropolitaine sont livrés sous 2 jours ouvrables.<\/p>\n<br>\n<p>Les colis expédiés via Colissimo dans les Dom-Tom sont livrés sous 7 jours ouvrés.<\/p><br> <p>Les colis expédiés via TNT dans les pays d’Europe sont livrés sous 2 jours ouvrables.<\/p><p><\/p>"
             }
           },
-          "page-faq-template-new-4": {
-            "type": "separator",
-            "settings": {
-              "title": "Retour et remboursement",
-              "picto": "shopify:\/\/shop_images\/undo.png"
-            }
-          },
-          "page-faq-template-new-5": {
-            "type": "question",
-            "settings": {
-              "title": "Effectuer un retour en France Métropolitaine",
-              "answer": "Vous disposez d’un délai de 15 jours après réception de votre commande pour nous retourner vos pièces contre remboursement, échange ou avoir, si elles ne vous ne conviennent pas. <br>\nA noter qu’un retour par commande seulement est pris en charge : si dans le cadre d'un échange, le nouveau produit ne convenait toujours pas, les frais des retours suivants sont à votre charge. Les pièces dont l’étiquette a été détachée ne pourront faire l’objet d’un retour."
-            }
-          },
-          "page-faq-template-new-6": {
-            "type": "question",
-            "settings": {
-              "title": "Effectuer un retour depuis un autre pays ou Dom\/Tom",
-              "answer": "Les retours depuis l'étranger, ainsi que les DOM TOM sont à votre charge. Attention cependant, il faut que les produits soient retournés dans un délai de 30 jours. Les pièces dont l’étiquette a été détachée ne pourront faire l’objet d’un retour."
-            }
-          },
-          "page-faq-template-new-7": {
-            "type": "separator",
-            "settings": {
-              "title": "Paiement",
-              "picto": "shopify:\/\/shop_images\/credit-card.png"
-            }
-          },
-          "page-faq-template-new-8": {
-            "type": "question",
-            "settings": {
-              "title": "Quels sont les moyens de paiement ?",
-              "answer": "Nous acceptons les paiements par carte bancaire et par Paypal. Tous les paiements sont bien sûrs sécurisés. "
-            }
-          },
           "1597352063171": {
             "type": "question",
             "settings": {
@@ -1064,6 +1029,27 @@
               "answer": "Malheureusement, une fois votre colis retourné à notre Atelier, celui-ci ne pourra vous être réexpédié et sera automatiquement remboursé dans un délai de 7 jours ouvrés."
             }
           },
+          "page-faq-template-new-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Retour et remboursement",
+              "picto": "shopify:\/\/shop_images\/undo.png"
+            }
+          },
+          "page-faq-template-new-5": {
+            "type": "question",
+            "settings": {
+              "title": "Effectuer un retour en France Métropolitaine",
+              "answer": "Vous disposez d’un délai de 15 jours après réception de votre commande pour nous retourner vos pièces contre remboursement, échange ou avoir, si elles ne vous ne conviennent pas. <br>\nA noter qu’un retour par commande seulement est pris en charge : si dans le cadre d'un échange, le nouveau produit ne convenait toujours pas, les frais des retours suivants sont à votre charge. Les pièces dont l’étiquette a été détachée ne pourront faire l’objet d’un retour."
+            }
+          },
+          "page-faq-template-new-6": {
+            "type": "question",
+            "settings": {
+              "title": "Effectuer un retour depuis un autre pays ou Dom\/Tom",
+              "answer": "Les retours depuis l'étranger, ainsi que les DOM TOM sont à votre charge. Attention cependant, il faut que les produits soient retournés dans un délai de 30 jours. Les pièces dont l’étiquette a été détachée ne pourront faire l’objet d’un retour."
+            }
+          },
           "1597352677383": {
             "type": "question",
             "settings": {
@@ -1076,6 +1062,20 @@
             "settings": {
               "title": "Ma pièce présente un défaut",
               "answer": "Nous nous excusons si le produit présente un défaut malgré tous nos contrôles qualité. Nous vous invitons à contacter le service client à l’adresse bonjour@meila-paris.com. N’oubliez pas de joindre à votre message des photos de votre pièce défectueuse, cela nous aidera à vous proposer la meilleure solution."
+            }
+          },
+          "page-faq-template-new-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Paiement",
+              "picto": "shopify:\/\/shop_images\/credit-card.png"
+            }
+          },
+          "page-faq-template-new-8": {
+            "type": "question",
+            "settings": {
+              "title": "Quels sont les moyens de paiement ?",
+              "answer": "Nous acceptons les paiements par carte bancaire et par Paypal. Tous les paiements sont bien sûrs sécurisés. "
             }
           },
           "1597352751080": {
@@ -1104,6 +1104,13 @@
             "settings": {
               "title": "Comment accéder à ma facture ?",
               "answer": "Une facture vous a été transmise par mail à la suite de votre achat avec le récapitulatif de la commande. Si vous ne retrouvez plus la facture n’hésitez pas à nous écrire à l’adresse bonjour@meila-paris.com, nous vous transmettrons un autre exemplaire."
+            }
+          },
+          "1597357524339": {
+            "type": "separator",
+            "settings": {
+              "title": "Produits et tailles",
+              "picto": "shopify:\/\/shop_images\/bikini.png"
             }
           },
           "1597352846679": {
@@ -1140,13 +1147,6 @@
               "title": "Où peut-on trouver nos produits ?",
               "answer": "Nos produits sont disponibles sur l’e-shop. Nous sommes également présents dans des pop-up store (magasins éphémères)."
             }
-          },
-          "1597357524339": {
-            "type": "separator",
-            "settings": {
-              "title": "Produits et tailles",
-              "picto": "shopify:\/\/shop_images\/bikini.png"
-            }
           }
         },
         "block_order": [
@@ -1180,6 +1180,54 @@
         "settings": {
           "heading": "Nos réponses à vos questions"
         }
+      },
+      "fournisseurs": {
+        "type": "fournisseurs",
+        "settings": {
+          "background-color": "#fff9ef",
+          "show-block-heading": true,
+          "heading_margin": 50,
+          "heading": "Nos fournisseurs",
+          "heading_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "section_size": "small",
+          "image": "shopify:\/\/shop_images\/ethan-bodnar-kgC99X3WH1w-unsplash.jpg",
+          "text_color": "#ffffff",
+          "overlay_color": "#000000",
+          "overlay_opacity": 0,
+          "subheading": "",
+          "title": "",
+          "content": "",
+          "image-left": "shopify:\/\/shop_images\/left.png",
+          "image-right": "shopify:\/\/shop_images\/right.png",
+          "map": ""
+        }
+      },
+      "1597737544753": {
+        "type": "text-with-image",
+        "settings": {
+          "subheading": "Sub-heading",
+          "title": "Title",
+          "image": "shopify:\/\/shop_images\/right.png",
+          "image_position": "right",
+          "content": "<p>Add your own custom content to give more information about your store, availability details...<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
+      },
+      "text-with-image-fournisseurs": {
+        "type": "text-with-image-fournisseurs",
+        "settings": {
+          "display": true,
+          "background-color": "#fff9ef",
+          "padding": 100,
+          "subheading": "",
+          "title": "Une fabrication tirée à quatre épingles",
+          "image": "shopify:\/\/shop_images\/four.png",
+          "image_position": "left",
+          "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+          "link_text": "",
+          "link_url": ""
+        }
       }
     },
     "content_for_index": [
@@ -1189,7 +1237,8 @@
       "featured-product",
       "timeline",
       "blog-posts",
-      "shop-the-look"
+      "shop-the-look",
+      "1597737544753"
     ]
   },
   "presets": {
