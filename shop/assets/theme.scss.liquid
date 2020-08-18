@@ -12223,6 +12223,8 @@ $gutter : 20px;
 
   .Engagement__title{
     font-size: 30px;
+    max-width: 90%;
+    margin: auto;
   }
 
   .Engagament__block-text,
@@ -12348,7 +12350,8 @@ $gutter : 20px;
 }
 
 
-/// fournisseurs map ////
+/// fournisseurs map desktop ////
+
 
 .Fournisseurs__map{
   padding-top: 10px;
@@ -12597,4 +12600,45 @@ $modal-transition:                  transform .3s ease-out !default;
   .modal-content {
     width: 90%;
   }
+}
+
+/// fournisseurs map mobile ////
+
+
+@media (max-width: 800px) {
+
+ .Fournisseurs__map-mobile{
+   margin-top: 30px;
+
+   .accordion-main{
+      padding: 0;
+      padding-bottom: 15px;
+      border: 0;
+      border-bottom: 1px solid currentColor;
+   }
+
+   .accordion_head{
+      display: flex;
+      align-items: flex-end;
+   }
+   .Fournisseur__flag{
+     margin-right: 10px;
+   }
+   .accordion_body {
+     margin-top: 40px;
+     margin-bottom: 20px;
+     h3{
+        margin-bottom: 5px;
+     }
+      p{
+
+        text-align: justify;
+      }
+
+   }
+   .Fournisseur__image{
+     text-align: center;
+     margin-top: 30px;
+   }
+ }
 }

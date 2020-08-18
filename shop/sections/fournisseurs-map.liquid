@@ -40,7 +40,7 @@
                         <span aria-hidden="true">&times;</span>
                       </button>
                       <div class="modal-body">
-                        <div class="grid">
+                        <div class="grid grid--medium">
                           <div class="1/2--lap-and-up grid__cell">
                             <div class="Modal__content">
                               <h2 class="Page__Heading u-h1 align-center">{{ block.settings.title }}</h2>
@@ -68,6 +68,34 @@
           </div>
 
         {% endfor %}
+    </div>
+    <div class="Fournisseurs__map-mobile mobile-only">
+       {%- for block in section.blocks -%}
+         <div class="accordion_container">
+            <div class="accordion-main">
+              <div class="accordion_head">
+                <div class="Fournisseur__flag">
+                   <img src="{{ block.settings.flag }}" alt="{{ block.settings.flag.alt }}">
+                </div>
+                  <p>{{ block.settings.name }}</p><span class="plusminus">+</span>
+              </div>
+              <div class="accordion_body" style="display: none;">
+                <h3 class="u-h2">{{ block.settings.title }}</h3>
+                <p>{{ block.settings.content }}</p>
+                {% if block.settings.image-1 != blank %}
+                  <div class="Fournisseur__image">
+                    <img src="{{ block.settings.image-1 | img_url:'master' }}" alt="{{ block.settings.image-1.alt }}">
+                  </div>
+                {% endif %}
+                {% if block.settings.image-2 != blank %}
+                   <div class="Fournisseur__image">
+                     <img src="{{ block.settings.image-2 | img_url:'master' }}" alt="{{ block.settings.image-2.alt }}">
+                   </div>
+                {% endif %}
+              </div>
+            </div>
+         </div>
+       {% endfor %}
     </div>
   </div>
 </section>
