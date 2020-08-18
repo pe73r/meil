@@ -1,0 +1,227 @@
+{% if section.settings.display %}
+<section  class="Section Fournisseurs__map">
+  <div class="container-fournisseurs">
+    {% if section.settings.show-block-heading  %}
+      <header class="Fournisseurs__map-heading">
+        <div class="SectionHeader SectionHeader--center">
+           <div class="SectionHeader__Heading Page__Heading Heading u-h1 Page__section-title Engagement__title">
+             {{ section.settings.heading }}
+           </div>
+           <div class="Fournisseurs__Heading-text align-center">
+             {{ section.settings.heading_content }}
+           </div>
+        </div>
+      </header>
+    {% endif %}
+    <div class="Fournisseurs__image relative desktop-only">
+        <img src="{{ section.settings.map | img_url:'master' }}" alt="{{ section.settings.map.alt }}">
+        {% for block in section.blocks %}
+          <div id="block-{{ block.id }}">
+             <div class="Fournisseur relative">
+               <a href="#" data-toggle="modal" data-target="#{{ block.settings.name }}">
+                {% if block.settings.flag != blank %}
+                  <div class="Fournisseur__flag">
+                     <img src="{{ block.settings.flag }}" alt="{{ block.settings.flag.alt }}">
+                  </div>
+                {% endif %}
+                {% if block.settings.name != blank %}
+                 <h5>{{ block.settings.name }}</h5>
+                {% endif %}
+                {% if block.settings.code_postal!= blank %}
+                 <h6>{{ block.settings.code_postal }}</h6>
+                {% endif %}
+             </a>
+
+                <!-- Modal -->
+                <div class="modal Fournisseur__modal" id="{{ block.settings.name }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content modal-background relative">
+                      <button type="button" class="close modal__close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <div class="modal-body">
+                        <div class="grid">
+                          <div class="1/2--lap-and-up grid__cell">
+                            <div class="Modal__content">
+                              <h2 class="Page__Heading u-h1 align-center">{{ block.settings.title }}</h2>
+                              <div class="align-left">
+                                 {{ block.settings.content }}
+                              </div>
+                              </div>
+                          </div>
+                          <div class="1/2--lap-and-up grid__cell">
+                              <div class="Modal__images">
+                                {% if block.settings.image-1 != blank %}
+                                  <img src="{{ block.settings.image-1 | img_url:'master' }}" alt="{{ block.settings.image-1.alt }}">
+                                {% endif %}
+                                {% if block.settings.image-2 != blank %}
+                                  <img src="{{ block.settings.image-2 | img_url:'master' }}" alt="{{ block.settings.image-2.alt }}">
+                                {% endif %}
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+          </div>
+
+        {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+<style>
+  .Fournisseurs__map{
+    background-color: {{ section.settings.background-color }};
+   }
+
+   #section-{{ section.id }} .Fournisseurs__Heading{
+       margin: {{ section.settings.heading_margin }}px auto;
+    }
+
+   .modal-background{
+      background-color: {{ section.settings.modal_background_color }};
+    }
+
+   {% for block in section.blocks %}
+       #block-{{ block.id }} .Fournisseur{
+             top: {{ block.settings.top }}%;
+             left: {{ block.settings.left }}%;
+        }
+   {% endfor %}
+//
+</style>
+
+{% schema %}
+{
+  "name": "Fournisseurs map",
+  "settings": [
+        {
+          "type": "checkbox",
+          "id": "display",
+          "label": "Display section ?",
+          "default": true
+        },
+        {
+          "type": "color",
+          "id": "background-color",
+          "label": "Background color",
+          "default": "#fff9ef"
+        },
+        {
+          "type": "header",
+          "content": "Block Heading"
+        },
+        {
+          "type": "checkbox",
+          "id": "show-block-heading",
+          "label": "Show heading ?",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Nos collaborateurs"
+        },
+        {
+          "type": "textarea",
+          "id": "heading_content",
+          "label": "Heading content"
+        },
+        {
+          "type": "image_picker",
+          "id": "map",
+          "label": "Map image"
+        },
+        {
+          "type": "header",
+          "content": "Pop-up"
+        },
+        {
+          "type": "color",
+          "id": "modal_background_color",
+          "label": "Pop-up background color",
+          "default": "#fff9ef"
+        }
+  ],
+  "blocks": [
+    {
+      "type": "fournisseur",
+      "name": "Fournisseur",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Flag"
+        },
+         {
+           "type": "text",
+           "id": "flag",
+           "label": "Flag"
+         },
+         {
+           "type": "text",
+           "id": "name",
+           "label": "Name",
+           "default": "Name",
+           "info": "Its important to name every block differently to show the right pop-up"
+         },
+         {
+           "type": "text",
+           "id": "code_postal",
+           "label": "Code postal",
+           "default": "75002"
+         },
+         {
+              "type":      "range",
+              "id":        "top",
+              "min":       0,
+              "max":        100,
+              "step":       1,
+              "unit":       "%",
+              "label":     "Top",
+              "default":   0
+         },
+         {
+              "type":      "range",
+              "id":        "left",
+              "min":       0,
+              "max":        100,
+              "step":       1,
+              "unit":       "%",
+              "label":     "Left",
+              "default":   0
+         },
+         {
+           "type": "header",
+           "content": "Pop up"
+         },
+         {
+           "type": "text",
+           "id": "title",
+           "label": "Fournisseur",
+           "default": "Fournisseur"
+         },
+         {
+           "type": "textarea",
+           "id": "content",
+           "label": "Content",
+           "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+         },
+         {
+           "type": "image_picker",
+           "id": "image-1",
+           "label": "Image 1"
+         },
+         {
+           "type": "image_picker",
+           "id": "image-2",
+           "label": "Image 2"
+         }
+      ]
+    }
+  ]
+}
+{% endschema %}

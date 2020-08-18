@@ -1,22 +1,22 @@
 {
   "current": {
     "heading_color": "#454545",
-    "text_color": "#89979f",
+    "text_color": "#454545",
     "text_light_color": "#89979f",
     "link_color": "#a17c5e",
     "background": "#ffffff",
     "light_background": "#ffffff",
     "product_on_sale_color": "#8a2930",
-    "button_background": "#89979f",
-    "button_text_color": "#f4e7cd",
+    "button_background": "#636362",
+    "button_text_color": "#ffffff",
     "header_background": "#ffffff",
-    "header_heading_color": "#454545",
-    "header_light_color": "#89979f",
+    "header_heading_color": "#686868",
+    "header_light_color": "#d6d6d6",
     "footer_background": "#ffffff",
     "footer_heading_color": "#454545",
     "footer_text_color": "#89979f",
-    "navigation_background": "#89979f",
-    "navigation_text_color": "#f4e7cd",
+    "navigation_background": "#d6d7d7",
+    "navigation_text_color": "#89979f",
     "newsletter_popup_background": "#454545",
     "newsletter_popup_text_color": "#ffffff",
     "secondary_elements_background": "#f4e7cd",
@@ -295,8 +295,8 @@
           "add_spacing": true,
           "expand_collection": false,
           "stack_on_mobile": true,
-          "text_color": "#89979f",
-          "button_color": "#f4e7cd"
+          "text_color": "#fcfcfc",
+          "button_color": "#636362"
         }
       },
       "featured-product": {
@@ -1227,6 +1227,82 @@
           "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
           "link_text": "",
           "link_url": ""
+        }
+      },
+      "fournisseurs-map": {
+        "type": "fournisseurs-map",
+        "blocks": {
+          "1597745566705": {
+            "type": "fournisseur",
+            "settings": {
+              "flag": "https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/9402\/9956\/files\/france.svg?v=1597747438",
+              "name": "Troyes",
+              "code_postal": "",
+              "top": 42,
+              "left": 33,
+              "title": "Fournisseur",
+              "content": "10420  Troyes<br>\nMaille de coton organique<br>\n +33 1 45 08 50 69<br>\n<br>\n<br>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "image-1": "shopify:\/\/shop_images\/Layer_56.png",
+              "image-2": "shopify:\/\/shop_images\/Layer_57.png"
+            }
+          },
+          "1597763499641": {
+            "type": "fournisseur",
+            "settings": {
+              "flag": "https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/9402\/9956\/files\/belgium.svg?v=1597763545",
+              "name": "Fournisseur",
+              "code_postal": "",
+              "top": 30,
+              "left": 31,
+              "title": "Fournisseur",
+              "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "image-1": "shopify:\/\/shop_images\/Screenshot_2020-08-18_at_17.41.58.png",
+              "image-2": ""
+            }
+          },
+          "1597764992085": {
+            "type": "fournisseur",
+            "settings": {
+              "flag": "https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/9402\/9956\/files\/france.svg?v=1597747438",
+              "name": "Paris",
+              "code_postal": "",
+              "top": 41,
+              "left": 25,
+              "title": "Fournisseur",
+              "content": "75002  Paris<br>\nRue st. Dennis<br>\n +33 1 45 08 50 69<br>\n<br>\n<br>\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "image-1": "shopify:\/\/shop_images\/Screenshot_2020-08-18_at_17.41.21.png",
+              "image-2": ""
+            }
+          },
+          "1597748005224": {
+            "type": "fournisseur",
+            "settings": {
+              "flag": "https:\/\/cdn.shopify.com\/s\/files\/1\/0312\/9402\/9956\/files\/spain.svg?v=1597747438",
+              "name": "Fabrica",
+              "code_postal": "",
+              "top": 70,
+              "left": 17,
+              "title": "Fournisseur",
+              "content": "Saragosse<br>\nMaille de coton organique<br>\n +33 1 45 08 50 69<br>\n<br>\n<br>\n\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<\/p>",
+              "image-1": "shopify:\/\/shop_images\/ethan-bodnar-kgC99X3WH1w-unsplash.jpg",
+              "image-2": ""
+            }
+          }
+        },
+        "block_order": [
+          "1597745566705",
+          "1597748005224",
+          "1597763499641",
+          "1597764992085"
+        ],
+        "settings": {
+          "display": true,
+          "background-color": "#fff9ef",
+          "show-block-heading": true,
+          "heading": "Nos collaborateurs",
+          "heading_content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+          "map": "shopify:\/\/shop_images\/maps.png",
+          "modal_background_color": "#fff9ef"
         }
       }
     },

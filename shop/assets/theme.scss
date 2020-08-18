@@ -9,26 +9,26 @@
 $background      : #ffffff;
 $light-background: #ffffff;
 $heading-color   : #454545;
-$text-color      : #89979f;
+$text-color      : #454545;
 $text-color-light: #89979f;
 $link-color      : #a17c5e;
-$border-color    : #edeff1;
+$border-color    : #e3e3e3;
 
-$button-background: #89979f;
-$button-text-color: #f4e7cd;
+$button-background: #636362;
+$button-text-color: #ffffff;
 
 $header-background       : #ffffff;
-$header-heading-color    : #454545;
-$header-light-text-color : #89979f;
-$header-border-color     : #e3e3e3;
+$header-heading-color    : #686868;
+$header-light-text-color : #d6d6d6;
+$header-border-color     : #e8e8e8;
 
 $footer-background    : #ffffff;
 $footer-text-color    : #89979f;
 $footer-heading-color : #454545;
 $footer-border-color  : #edeff1;
 
-$navigation-background      : #89979f;
-$navigation-text-color      : #f4e7cd;
+$navigation-background      : #d6d7d7;
+$navigation-text-color      : #89979f;
 $navigation-text-color-light: rgba($navigation-text-color, 0.5);
 $navigation-border-color    : rgba($navigation-text-color, 0.25);
 
@@ -11844,6 +11844,9 @@ $gutter : 20px;
 .align-center{
   text-align: center;
 }
+.align-left{
+  text-align: left;
+}
 
 .ml-100{
   margin-left: 100px;
@@ -11865,6 +11868,15 @@ $gutter : 20px;
   justify-content: center;
 }
 
+.desktop-only{
+  display: block;
+}
+
+.mobile-only{
+  display: none;
+}
+
+
 @include av-mq('phone') {
   .flex{
     flex-direction: column;
@@ -11872,7 +11884,14 @@ $gutter : 20px;
   .ml-100{
     margin-left: 0;
   }
+  .desktop-only{
+    display: none;
+  }
+  .mobile-only{
+    display: block;
+  }
 }
+
 
 
 /*================ Morphologie page ================*/
@@ -12345,7 +12364,7 @@ $gutter : 20px;
 }
 
 
-//// fournisseurs /////
+//// fournisseurs header /////
 
 .Fournisseurs__header{
   padding-top: 50px;
@@ -12360,9 +12379,257 @@ $gutter : 20px;
 .Fournisseurs__Heading-text{
    max-width: 1000px;
    margin: auto;
-   margin-top: 50px;
+   margin-top: 30px;
 }
 
-.Fournisseurs__text-image{
 
+/// fournisseurs map ////
+
+.Fournisseurs__map{
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.Fournisseurs__map-heading{
+  padding-bottom: 30px;
+}
+
+.Fournisseurs__image{
+  img{
+    width: 100%;
+  }
+}
+
+.Fournisseur{
+  position: absolute;
+  text-align: center;
+  h5{
+    margin: 0;
+  }
+  h6{
+    margin: 0;
+  }
+}
+
+.Fournisseur__flag{
+  img{
+    width: 30px;
+    height: 18px;
+  }
+}
+
+
+// MODAL Bootstrap
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
+$zindex-popover:                    1060 !default;
+$zindex-tooltip:                    1070 !default;
+$zindex-close:                      1080 !default;
+
+$line-height-base:            1.5 !default;
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:         5rem 3rem !default;
+
+$modal-dialog-margin:         .5rem !default;
+$modal-dialog-margin-y-sm-up: 1.75rem !default;
+
+$modal-title-line-height:           $line-height-base !default;
+
+$modal-content-bg:               white !default;
+$modal-content-border-color:     rgba(black, .2) !default;
+$modal-content-border-width:     2px !default;
+$modal-content-box-shadow-xs:    0 .25rem .5rem rgba(black, .5) !default;
+$modal-content-box-shadow-sm-up: 0 .5rem 1rem rgba(black, .5) !default;
+
+$modal-backdrop-bg:           black !default;
+$modal-backdrop-opacity:      .5 !default;
+$modal-header-border-color:   grey !default;
+$modal-footer-border-color:   grey !default;
+$modal-header-border-width:   2px !default;
+$modal-footer-border-width:   2px !default;
+$modal-header-padding:        1rem !default;
+
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
+
+$modal-transition:                  transform .3s ease-out !default;
+
+
+
+// .modal-open      - body class for killing the scroll
+// .modal           - container to scroll within
+// .modal-dialog    - positioning shell for the actual modal
+// .modal-content   - actual modal w/ bg and corners and stuff
+
+
+// Kill the scroll on the body
+.modal-open {
+  overflow: hidden;
+}
+
+// Container that the modal scrolls within
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal;
+  display: none;
+  overflow: hidden;
+  // Prevent Chrome on Windows from adding a focus outline. For details, see
+  // https://github.com/twbs/bootstrap/pull/10951.
+  outline: 0;
+  // We deliberately don't use `-webkit-overflow-scrolling: touch;` due to a
+  // gnarly iOS Safari bug: https://bugs.webkit.org/show_bug.cgi?id=158342
+  // See also https://github.com/twbs/bootstrap/issues/17695
+
+  .modal-open & {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}
+
+// Shell div to position the modal with bottom padding
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 40px;
+  // allow clicks to pass through for custom click handling to close modal
+  pointer-events: none;
+
+  // When fading in the modal, animate it to slide down
+  .modal.fade & {
+
+    transform: translate(0, -25%);
+  }
+  .modal.show & {
+    transform: translate(0, 0);
+  }
+}
+
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  min-height: calc(100% - (#{$modal-dialog-margin} * 2));
+}
+
+// Actual modal
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 70%; // Ensure `.modal-content` extends the full width of the parent `.modal-dialog`
+  // counteract the pointer-events: none; in the .modal-dialog
+  pointer-events: auto;
+  background-color: $modal-content-bg;
+  background-clip: padding-box;
+  // Remove focus outline from opened modal
+  outline: 0;
+  margin: auto;
+  min-height: 250px;
+}
+
+// Modal background
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: $zindex-modal-backdrop;
+  background-color: $modal-backdrop-bg;
+
+  // Fade for backdrop
+  &.fade { opacity: 0; }
+  &.show { opacity: $modal-backdrop-opacity; }
+}
+
+// Modal header
+// Top section of the modal w/ title and dismiss
+.modal-header {
+  display: flex;
+  align-items: flex-start; // so the close btn always stays on the upper right corner
+  justify-content: space-between; // Put modal header elements (title and dismiss) on opposite ends
+  padding: $modal-header-padding;
+  border-bottom: $modal-header-border-width solid $modal-header-border-color;
+
+  .close {
+    padding: $modal-header-padding;
+    // auto on the left force icon to the right even when there is no .modal-title
+    margin: (-$modal-header-padding) (-$modal-header-padding) (-$modal-header-padding) auto;
+  }
+}
+
+// Title text within header
+.modal-title {
+  margin-bottom: 0;
+  line-height: $modal-title-line-height;
+}
+
+// Modal body
+// Where all modal content resides (sibling of .modal-header and .modal-footer)
+.modal-body {
+  position: relative;
+  // Enable `flex-grow: 1` so that the body take up as much space as possible
+  // when should there be a fixed height on `.modal-dialog`.
+  padding: $modal-inner-padding;
+}
+
+
+// Measure scrollbar width for padding body during modal show/hide
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.Fournisseur__modal{
+
+}
+
+.modal__close{
+   position: absolute;
+   right: 20px;
+   top: 0;
+   font-size: 40px;
+   z-index: $zindex-close;
+}
+
+.Modal__content{
+  p{
+    text-align: justify;
+  }
+}
+
+.Modal__images{
+  img{
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1039px) {
+  .modal-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .modal-content {
+    width: 90%;
+  }
 }
